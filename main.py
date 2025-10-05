@@ -7,4 +7,9 @@ print(student_names)
 from dictionaries.performance_categories import performance_categories
 print(performance_categories)
 
+from dictionaries.score_descriptions import score_desciptions
+print(score_desciptions)
+
+
+
 

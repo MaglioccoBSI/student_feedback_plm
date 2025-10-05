@@ -3,7 +3,7 @@
 student_names = {
     "Peter": 0,
     "Anthony": 0,
-    "Marco" : 0,
+    "Marco": 0,
     "Rachel": 0
 }
 

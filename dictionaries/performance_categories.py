@@ -7,8 +7,7 @@ performance_categories = {
     "Lab Completion": 0,
     "Punctuality": 0,
     "Engagement": 0,
-    "Further Study Level" : 0  
-    
+    "Further Study Level" : 0 
 }
 
 #print(performance_categories)
