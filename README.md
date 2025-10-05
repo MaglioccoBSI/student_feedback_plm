@@ -14,7 +14,11 @@ The table contained the student name, the score category, the score and a key th
 
 I also created a sample_wording docx so I could visualise what the final report about each student would contain.
 
-Now I have the very basics of the socring and overall report, I then started to think about the python coding such as what dictionaries I may have e.g student names, the categories that eaxh student will be score against. So with this I then created a sub folder in my project called dictionaries. Dictionaries now contain the .py files for students, categories etc.
+Now I have the very basics of the socring and overall report, I then started to think about the python coding such as what dictionaries I may have e.g student names, the categories that eaxh student will be score against. So with this I then created a sub folder in my project called dictionaries. Dictionaries now contain the .py files for students, score description and perofrmance categories. This is so that in the future they could be re-used or added to.
+
+In addtion I have created a Python Structure document that gives you an idea of the structure in the student feedback project.
+
+
 
 
 
