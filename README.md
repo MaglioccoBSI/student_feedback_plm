@@ -10,7 +10,11 @@ After reading the brief, I started my planning and design journey by first creat
 I then started to breakdown the brief by first creating the student_design.xlsx file just so I could picture
 what an overall table of results would look like against each student.
 
-The table contained the student name, the score category, the score and a key that represents the score value which will be used as the phrase  
+The table contained the student name, the score category, the score and a key that represents the score value, which will be used as the phrases.
+
+I also created a sample_wording docx so I could visualise what the final report about each student would contain.
+
+Now I have the very basics of the socring and overall report, I then started to think about the python coding such as what dictionaries I may have e.g student names, the categories that eaxh student will be score against. So with this I then created a sub folder in my project called dictionaries. Dictionaries now contain the .py files for students, categories etc.
 
 
 
