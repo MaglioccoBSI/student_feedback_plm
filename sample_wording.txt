@@ -1,0 +1,18 @@
+This is the updated sample design. Have also duplicated in word to check the spelling and then copied and pasted as a txt file.
+
+
+
+General Comments:
+(Insert Name) did well in this module. They demonstrated a good understanding of the concepts we covered and showed they have a broad knowledgebase. 
+(Insert Name) contributed to discussions and asked relevant questions.
+
+Learner Punctuality and Engagement:
+(Insert Name) was punctual throughout the module and engaged well on the Live lessons.
+
+Recommendations on Further Learning:
+Continue to practice the basics of Python, Variables and Data Types, Control Flow, Loops, Functions, Lists and Dictionaries, Modules and Packages and Working with Files.
+
+Regards
+Tutors Name
+
+
