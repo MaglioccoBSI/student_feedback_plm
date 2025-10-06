@@ -24,7 +24,10 @@ With that quick test I then went onto create the main.py file and imported each 
 
 As main is the starting point I started off with my introducton and basic set of intructions for the end user (tutor)
 
-This is 
+At this 
+
+
+Give a lot more time I would design where the tutor just enters the name of the students on the fly that they want to report on, rather than pre-define this as it meant 
 
 
 
