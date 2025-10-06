@@ -23,19 +23,12 @@ print() # This is a blank line for when code is run
 input("Press Enter...\n")
     
 print("Using the following scoring key, you need to mark each category 1 - 4 for each student\n")
-
-
-
-
 for key, value in score_descriptions.items():
     print(f"{key} = {value}")
     
 print() # This is a blank line for when code is run    
-input("Press Enter For A List of Students...\n")
 
-for category in student:
-    print(f"- {category}")
-    
+
 print() # This is a blank line for when code is run    
 
 
