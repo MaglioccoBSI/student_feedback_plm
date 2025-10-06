@@ -10,6 +10,8 @@ from dictionaries.performance_categories import performance_categories
 from dictionaries.score_descriptions import score_descriptions
 #print(score_desciptions)
 
+import os
+
 
 print("Welcome to the Student Feedback Report\n")
 input("Press Enter...\n")
@@ -42,6 +44,20 @@ for student_name in student:
 
 print(f"\nScores for {student} recorded successfully!")
 
+
+output_folder = "student_reports"
+os.makedirs(output_folder, exist_ok=True)
+
+for student_name, scores in student.items():
+    filename = os.path.join(output_folder, f"{student_name}_Performance_Score.txt")
+    
+    with open(filename, "w") as file:
+        file.write(f"Student Performance Score for {student_name}\n")
+        file.write("="*40 + "\n")
+        for category, score in scores.items():
+            file.write(f"{category}: {score}\n")
+    
+    print(f"Report created for {student_name}: {filename}")
 
 
 
