@@ -13,12 +13,10 @@ from dictionaries.score_descriptions import score_descriptions
 
 print("Welcome to the Student Feedback Report\n")
 input("Press Enter...\n")
+
 print("As the Tutor you will be marking your students on the following\n")
-
-
 for category in performance_categories:
     print(f"- {category}")
-    
 print() # This is a blank line for when code is run
 input("Press Enter...\n")
     
@@ -28,17 +26,8 @@ for key, value in score_descriptions.items():
     
 print() # This is a blank line for when code is run    
 
-
-print() # This is a blank line for when code is run    
-
-
-student = "Peter"  # 
-
-print(f"\nEnter scores for {student}:")
-
 for student_name in student:
     print(f"\nEnter scores for {student_name}:")
-
     for category in performance_categories:
         while True:
             try:
