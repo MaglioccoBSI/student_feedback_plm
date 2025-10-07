@@ -1,9 +1,9 @@
 Student Performance Score for Peter
 ========================================
-Overall Performance: 1
-General Understanding: 2
-Contribution Level: 3
-Lab Completion: 4
-Punctuality: 1
+Overall Performance: 3
+General Understanding: 3
+Contribution Level: 4
+Lab Completion: 1
+Punctuality: 4
 Engagement: 2
-Further Study Level: 3
+Further Study Level: 1
