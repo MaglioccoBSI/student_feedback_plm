@@ -33,19 +33,26 @@ for key, value in score_descriptions.items():
     
 print() # This is a blank line for when code is run    
 
+
 for student_name in student:
     print(f"\nEnter scores for {student_name}:")
     for category in performance_categories:
         while True:
+            user_input = input(f"- {category} (1-4 or type 'quit' to exit): ")
+            if user_input.lower() == 'quit':
+                print("Quitting program...")
+                exit()  # or use sys.exit() if you prefer
+
             try:
-                score = int(input(f"- {category} (1-4): "))
+                score = int(user_input)
                 if score in [1, 2, 3, 4]:
                     student[student_name][category] = score  # store the score
                     break  # exit the while loop
                 else:
                     print("Please enter a number between 1 and 4.")
             except ValueError:
-                print("Invalid input. Please enter a number between 1 and 4.")
+                print("Incorrect entry. Please enter a number between 1 and 4 or 'quit' to exit.")
+
 
 print(f"\nScores for {student} recorded successfully!")
 
