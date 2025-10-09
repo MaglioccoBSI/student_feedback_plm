@@ -8,7 +8,7 @@ from dictionaries.performance_categories import performance_categories
 #print(performance_categories)
 
 from dictionaries.score_descriptions import score_descriptions
-#print(score_desciptions)
+#print(score_descriptions)
 
 import os
 
@@ -83,19 +83,27 @@ os.makedirs(output_folder, exist_ok=True)
 template_path = r"C:\Artemis\Python\Project\student_feedback_plm\templates\feedback\template.docx"
 
 # This generate the feedback doc for each
-for student_name, scores in student.items():
+for student_name, scores, in student.items():
     # This loads the template
     doc = Document(template_path)
 
-    # This replaces the  placeholders in the template
+    # This replaces the Student Name and Score placeholders in the template
     for paragraph in doc.paragraphs:
         if "{{STUDENT_NAME}}" in paragraph.text:
-            paragraph.text = paragraph.text.replace("{{STUDENT_NAME}}", student_name)
-        if "{{SCORES}}" in paragraph.text:
-            
+            paragraph.text = paragraph.text.replace("{{STUDENT_NAME}}", student_name) 
+        if "{{SCORES}}" in paragraph.text:            
             scores_text = "\n".join(f"{category}: {score}" for category, score in scores.items())
             paragraph.text = paragraph.text.replace("{{SCORES}}", scores_text)
-
+            
+        # This replaces the performance category placeholders
+    for idx, category in enumerate(performance_categories.keys(), start=1):
+        placeholder = f"{{{{PERFORMANCE_CATEGORIES_{idx}}}}}"  # e.g, {{PERFORMANCE_CATEGORIES_1}}
+        for paragraph in doc.paragraphs:
+            for run in paragraph.runs:
+                if placeholder in run.text:
+                    run.text = run.text.replace(placeholder, category)        
+    
+    
     # You can change the naming convention here: e.g from _feed_back.docx to _feedback.docx
     docx_filename = os.path.join(output_folder, f"{student_name}_feedback.docx")
     doc.save(docx_filename)

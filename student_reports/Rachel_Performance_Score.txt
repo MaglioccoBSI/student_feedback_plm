@@ -1,9 +1,9 @@
 Student Performance Score for Rachel
 ========================================
-Overall Performance: 1
-General Understanding: 2
-Contribution Level: 3
+Overall Performance: 4
+General Understanding: 4
+Contribution Level: 4
 Lab Completion: 4
 Punctuality: 4
-Engagement: 3
-Further Study Level: 3
+Engagement: 4
+Further Study Level: 4

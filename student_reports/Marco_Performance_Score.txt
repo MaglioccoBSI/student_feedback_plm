@@ -1,9 +1,9 @@
 Student Performance Score for Marco
 ========================================
-Overall Performance: 4
-General Understanding: 2
+Overall Performance: 3
+General Understanding: 3
 Contribution Level: 3
-Lab Completion: 2
-Punctuality: 1
-Engagement: 2
+Lab Completion: 3
+Punctuality: 3
+Engagement: 3
 Further Study Level: 3
